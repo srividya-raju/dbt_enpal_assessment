@@ -1,2 +1,4 @@
-<img width="1832" height="638" alt="image" src="https://github.com/user-attachments/assets/6b6d5fa7-0b86-468c-ad26-b01cfac3ddd5" />
+Pipedrive Pipeline:
+<img width="1842" height="727" alt="image" src="https://github.com/user-attachments/assets/8c8e0f5a-b216-4ccf-877b-d8159b80aa7e" />
+
 
