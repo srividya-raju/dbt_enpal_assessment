@@ -15,7 +15,9 @@ Implementing the dbt snapshot functionality, dim_users table is implemented for 
 
 Testing Strategy:
 This project includes
+
 Generic tests: not_null, unique, relationships
+
 Singular tests: KPI name validation wrt stg_stages table for deals
 
 Future Enhancements:
