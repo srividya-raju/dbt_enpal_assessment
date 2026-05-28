@@ -6,7 +6,7 @@ Architecture:
 1) Staging layer: this layer consists of staging models directly sourced from raw ingestion tables in postgres schema. The staging models are materilaized as views.
 Actions performed: Column renaming, type casting
 2) Intermediate layer: This layer consists of cleaned and business validated intermediate transformations. These models are materialized as tables.
-Actions performed: deduplication, enrichment joins, KPI definitions implementation
+Actions performed: deduplication, enrichment joins, KPI definitions groundwork
 3) Marts: This layer consists of anlytics ready dimensional and reporting models. These models are materialized as tables.
 Actions performed: PI reporting, dimensional modeling
 
