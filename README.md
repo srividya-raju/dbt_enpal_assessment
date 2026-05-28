@@ -22,6 +22,8 @@ Singular tests: KPI name validation wrt stg_stages table for deals
 
 Future Enhancements:
 Work on more KPIs
+
 Work on implementations for lost deals
+
 Implement incremental materialization when the data volume increases to millions of rows, leading to the dbt module compiling for a long time
 
