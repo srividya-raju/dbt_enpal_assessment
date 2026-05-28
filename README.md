@@ -1,6 +1,6 @@
 Pipedrive CRM Pipeline in dbt:
 <img width="1842" height="727" alt="image" src="https://github.com/user-attachments/assets/37dfb09e-4992-448b-8f6b-c738a4815991" />
-This project implements a modern analytics engineering workflow using dbt with 3 layer architecture(staging, intermediate and marts). The pipeline transforms CRM deal change data into clean, analytics-ready dimensional models.
+This project implements a modern analytics engineering workflow using dbt with 3 layer architecture(staging, intermediate and marts). The pipeline transforms CRM deal change data into clean, analytics-ready models.
 
 Architecture: 
 1) Staging layer: this layer consists of staging models directly sourced from raw ingestion tables in postgres schema. The staging models are materilaized as views.
