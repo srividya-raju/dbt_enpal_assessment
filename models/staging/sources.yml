@@ -1,0 +1,93 @@
+version: 2
+
+sources:
+  - name: postgres_public
+    database: postgres
+    schema: public
+    tables:
+      - name: activity
+        columns:
+          - name: activity_id
+            tests:
+              - not_null
+          - name: type
+            tests:
+              - accepted_values:
+                  arguments:
+                    values:
+                     - meeting
+                     - sc_2
+                     - follow_up
+                     - after_close_call
+          - name: assigned_to_user
+            tests:
+            - not_null
+          - name: deal_id
+            tests:
+             - not_null
+          - name: done
+          - name: due_to
+      - name: activity_types
+        columns:
+          - name: id
+            tests:
+              - not_null
+              - unique
+          - name: name
+            tests:
+              - not_null
+          - name: active
+            tests:
+              - not_null
+          - name: type
+            tests:
+              - not_null
+      - name: deal_changes
+        columns:
+          - name: deal_id
+            tests:
+              - not_null
+          - name: changed_field_key
+            tests:
+              - not_null
+          - name: change_time
+            tests:
+              - not_null
+          - name: new_value
+      - name: fields
+        columns:
+          - name: id
+            tests:
+              - not_null
+              - unique
+          - name: name
+            tests:
+              - not_null
+          - name: field_key
+            tests:
+              - not_null
+          - name: field_value_options
+      - name: stages
+        columns:
+          - name: stage_id
+            tests:
+              - not_null
+              - unique
+          - name: stage_name
+            tests:
+              - not_null
+      - name: users
+        columns:
+          - name: id
+            tests:
+              - not_null
+               - unique
+          - name: email
+            tests:
+              - not_null
+          - name: name
+            tests:
+              - not_null
+          - name: modified
+            tests:
+              - not_null

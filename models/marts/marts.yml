@@ -1,0 +1,31 @@
+version : 2
+models:
+  - name: rep_sales_funnel_monthly
+    description: "This model is used to create a monthly sales funnel report for each representative."
+    columns:
+      - name: month
+        tests:
+          - not_null
+      - name: funnel_step
+        tests:
+          - not_null
+      - name: kpi_name
+        tests:
+          - not_null
+      - name: deal_count
+        tests:
+          - not_null
+  - name: fact_deal_activity
+    columns:
+      - name: deal_id
+        tests:
+          - not_null
+      - name: deal_change_time
+        tests:
+          - not_null
+      - name: funnel_step
+        tests:
+          - not_null
+      - name: kpi_name
+        tests:
+          - not_null  
