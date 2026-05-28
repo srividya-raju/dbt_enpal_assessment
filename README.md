@@ -21,6 +21,7 @@ Generic tests: not_null, unique, relationships
 Singular tests: KPI name validation wrt stg_stages table for deals
 
 Future Enhancements:
+
 Work on more KPIs
 
 Work on implementations for lost deals
